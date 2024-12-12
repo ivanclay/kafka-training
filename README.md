@@ -35,10 +35,46 @@ It is only a Kafka training repository
     tar xzf kafka_2.13-3.0.0.tgz
 ```
 
+### ZOOKEEPER RUN
+
+```sh
+    ./zookeeper-server-start.sh ../config/zookeeper.properties
+```
+
 ### KAFKA RUN
 
 ```sh
+    ./kafka-server-start.sh ../config/server.properties
+```
+### KAFKA UTILITIES RUN
+
+```sh
     ./kafka-topics.sh --list --bootstrap-server localhost:9092
+```
+
+
+```sh
+    ./kafka-topics.sh -create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic tp-test
+```
+
+```sh
+    ./kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic tp-test
+```
+
+```sh
+   ./kafka-topics.sh --alter --bootstrap-server localhost:9092 --topic tp-test --partitions 2
+```
+
+```sh
+    ./kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic tp-test
+```
+
+```sh
+    ./kafka-configs.sh --alter --bootstrap-server localhost:9092 --entity-type topics --entity-name tp-test --add-config retention.ms=1000
+```
+
+```sh
+    
 ```
 
 ### Dependencies
