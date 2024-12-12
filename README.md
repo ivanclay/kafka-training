@@ -109,7 +109,7 @@ It is only a Kafka training repository
 
 
 ```sh
-
+./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic tp-test --from-beginning --group cgp-test
 ``` 
 ### Dependencies
 
