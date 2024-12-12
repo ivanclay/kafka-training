@@ -48,6 +48,8 @@ It is only a Kafka training repository
 ```
 ### KAFKA UTILITIES RUN
 
+#### TOPICS
+
 ```sh
     ./kafka-topics.sh --list --bootstrap-server localhost:9092
 ```
@@ -73,10 +75,24 @@ It is only a Kafka training repository
     ./kafka-configs.sh --alter --bootstrap-server localhost:9092 --entity-type topics --entity-name tp-test --add-config retention.ms=1000
 ```
 
+#### PRODUCERS
+
 ```sh
-    
+    ./kafka-console-producer.sh --broker-list localhost:9092 --topic tp-test
 ```
 
+```sh
+    ./kafka-console-producer.sh --broker-list localhost:9092 --topic tp-test --property parse.key=true --property key.separator=;
+```
+#### CONSUMERS
+
+```sh
+    ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic tp-test --from-beginning
+```
+
+```sh
+    ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic tp-test --from-beginning --property print.key=true --property key.separator=;
+```
 ### Dependencies
 
 - [--]()
