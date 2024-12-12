@@ -37,6 +37,10 @@ It is only a Kafka training repository
 
 ### KAFKA RUN
 
+```sh
+    ./kafka-topics.sh --list --bootstrap-server localhost:9092
+```
+
 ### Dependencies
 
-- [StackExchange.Redis 2.8.22]()
+- [--]()
