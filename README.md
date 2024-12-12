@@ -93,6 +93,24 @@ It is only a Kafka training repository
 ```sh
     ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic tp-test --from-beginning --property print.key=true --property key.separator=;
 ```
+#### CONSUMER GROUPS
+
+```sh
+   ./kafka-consumer-groups.sh --list --bootstrap-server localhost:9092 
+```
+
+```sh
+   ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group cgp-test --reset-offsets --to-earliest --topic tp-test --execute
+```
+
+```sh
+  ./kafka-consumer-groups.sh --describe --group cgp-test --bootstrap-server localhost:9092
+``` 
+
+
+```sh
+
+``` 
 ### Dependencies
 
 - [--]()
