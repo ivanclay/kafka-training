@@ -1,7 +1,7 @@
 # Kafka Training
 
 ![Badge de Licença](https://img.shields.io/badge/.NET-8.0.0-blue.svg?style=flat-square&logo=dotnet)
-![Badge de Licença](https://img.shields.io/badge/Kafka-0.0.0-orange.svg?style=flat-square&logo=kafka)
+![Badge de Licença](https://img.shields.io/badge/Apache_Kafka-2.13_3.0.0-orange.svg?style=flat-square&logo=apachekafka)
 ![Badge de Licença](https://img.shields.io/badge/git-2.42.0-lightgrey.svg?style=flat-square&logo=git)
 ![Badge de Licença](https://img.shields.io/badge/docker-27.2.0-orange.svg?style=flat-square&logo=docker)
 
